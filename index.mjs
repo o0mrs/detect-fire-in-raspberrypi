@@ -16,8 +16,6 @@ const detectFace = async()=>{
 // detect.writeSync(0)
   myCamera.snap()
   .then( async (result) => {
-    // Your picture was captured
-    console.log('cap')
     const file = resolve('/home/lukes/fire4/a.jpg');
     console.log('loading ', file);
     const image = cv.imread(file);
@@ -50,39 +48,10 @@ const detectFace = async()=>{
   });
 
 }
-
-
-
-
-
-
-
-
 const runme = async()=>{
    detectFace()
 }
 runme()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 export async function detectFire() {
 
 }
